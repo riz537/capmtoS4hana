@@ -35,6 +35,7 @@
     "app/*"
   ],
   "sapux": [
+    "app/capmtos4withfe",
     "app/capmtos4withfe"
   ]
 }

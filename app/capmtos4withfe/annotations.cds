@@ -1,10 +1,4 @@
 using EmployeeService as service from '../../srv/Emp-srv';
-
-annotate service.Employees with @(
-    UI.CreateHidden: false,
-    UI.UpdateHidden: false,
-    UI.DeleteHidden: false
-);
 annotate service.Employees with @(
     UI.FieldGroup #GeneratedGroup : {
         $Type : 'UI.FieldGroupType',
@@ -13,11 +7,6 @@ annotate service.Employees with @(
                 $Type : 'UI.DataField',
                 Label : 'Empid',
                 Value : Empid,
-            },
-            {
-                $Type : 'UI.DataField',
-                Label : 'Fixedsalary',
-                Value : Fixedsalary,
             },
             {
                 $Type : 'UI.DataField',
@@ -39,16 +28,6 @@ annotate service.Employees with @(
                 Label : 'Status',
                 Value : Status,
             },
-            {
-                $Type : 'UI.DataField',
-                Label : 'Salary',
-                Value : Salary,
-            },
-            {
-                $Type : 'UI.DataField',
-                Label : 'Rating',
-                Value : Rating,
-            },
         ],
     },
     UI.Facets : [
@@ -67,11 +46,6 @@ annotate service.Employees with @(
         },
         {
             $Type : 'UI.DataField',
-            Label : 'Fixedsalary',
-            Value : Fixedsalary,
-        },
-        {
-            $Type : 'UI.DataField',
             Label : 'Name',
             Value : Name,
         },
@@ -84,6 +58,11 @@ annotate service.Employees with @(
             $Type : 'UI.DataField',
             Label : 'Email',
             Value : Email,
+        },
+        {
+            $Type : 'UI.DataField',
+            Label : 'Status',
+            Value : Status,
         },
     ],
 );

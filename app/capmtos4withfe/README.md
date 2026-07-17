@@ -1,7 +1,7 @@
 ## Application Details
 |               |
 | ------------- |
-|**Generation Date and Time**<br>Fri Jul 17 2026 00:18:06 GMT+0000 (Coordinated Universal Time)|
+|**Generation Date and Time**<br>Fri Jul 17 2026 19:15:43 GMT+0000 (Coordinated Universal Time)|
 |**App Generator**<br>SAP Fiori Application Generator|
 |**App Generator Version**<br>1.28.0|
 |**Generation Platform**<br>SAP Business Application Studio|
@@ -9,7 +9,7 @@
 |**Service Type**<br>Local CAP|
 |**Service URL**<br>http://localhost:4004/odata/v4/employee/|
 |**Module Name**<br>capmtos4withfe|
-|**Application Title**<br>App Title|
+|**Application Title**<br>Capm Calling S4 API to store the data|
 |**Namespace**<br>com.demo|
 |**UI5 Theme**<br>sap_horizon|
 |**UI5 Version**<br>1.150.0|
@@ -19,7 +19,7 @@
 
 ## capmtos4withfe
 
-An SAP Fiori application.
+Capm Calling S4 API to store the data
 
 ### Starting the generated app
 
