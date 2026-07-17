@@ -1,0 +1,47 @@
+<mvc:View controllerName="com.demo.capmtos4.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <Table id="EmpTab" items="{path:'/Employees'}" mode="SingleSelectLeft">
+                <headerToolbar>
+                    <Toolbar >
+                        <Title text="Employees"></Title>
+                        <ToolbarSpacer ></ToolbarSpacer>
+                        <SearchField id="SF" search="onSearch" width="30%"></SearchField>
+                        <Button text="Create" icon="sap-icon://add" type="Emphasized" press="onPressCreate"></Button>
+                        <Button text="Edit" icon="sap-icon://edit" type="Emphasized" press="onPressEdit"></Button>
+                        <Button text="Delete" icon="sap-icon://delete" type="Reject" press="onPresDelete"></Button>
+                    </Toolbar>
+                </headerToolbar>
+                <columns>
+                    <Column >
+                        <Text text="Employee ID"></Text>
+                    </Column>
+                    <Column >
+                        <Text text="Name"></Text>
+                    </Column>
+                    <Column >
+                        <Text text="Designation"></Text>
+                    </Column>
+                  
+                    <Column >
+                        <Text text="Email"></Text>
+                    </Column>
+                    <Column >
+                        <Text text="Status"></Text>
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem >
+                        <Text text="{Empid}"></Text>
+                        <Text text="{Name}"></Text>
+                        <Text text="{Desig}"></Text>
+                        <Text text="{Email}"></Text>
+                        <Text text="{Status}"></Text>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>

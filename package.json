@@ -1,0 +1,40 @@
+{
+  "name": "capmtos4",
+  "version": "1.0.0",
+  "dependencies": {
+    "@sap/cds": "^9",
+    "@sap-cloud-sdk/connectivity": "^4",
+    "@sap-cloud-sdk/http-client": "^4",
+    "@sap-cloud-sdk/resilience": "^4"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^2.4",
+    "cds-plugin-ui5": "^0.17.0"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-capmtos4": "cds watch --open com.demo.capmtos4/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "watch-capmtos4withfe": "cds watch --open com.demo.capmtos4withfe/index.html?sap-ui-xx-viewCache=false --livereload false"
+  },
+  "private": true,
+  "cds": {
+    "requires": {
+      "EmpSrv": {
+        "kind": "odata-v2",
+        "model": "srv/external/EmpSrv",
+        "csrf": true,
+        "csrfInBatch": true,
+        "credentials": {
+          "destination": "Training",
+          "path": "/sap/opu/odata/sap/ZB78_emp_srv"
+        }
+      }
+    }
+  },
+  "workspaces": [
+    "app/*"
+  ],
+  "sapux": [
+    "app/capmtos4withfe"
+  ]
+}
